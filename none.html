@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleN.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title class="goa"></title>
+</head>
+<body>
+    <div class="top-side">
+        <div class="top-side-hero">
+            <div class="logo-cont">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png" alt="Google" height="30" width="92" data-atf="1" data-frt="0">
+            </div>
+            <div class="inp-go">
+                <input type="text" class="seach-inp">
+                <span class="material-symbols-outlined aa" >close</span>
+                <span class="material-symbols-outlined bb">mic</span>
+                <span class="material-symbols-outlined cc">search</span>
+            </div>
+        </div>
+
+
+        <div class="round-right">
+            <span class="material-symbols-outlined">settings</span>
+            <span class="material-symbols-outlined">apps</span>
+            <span class="person material-symbols-outlined">person</span>
+        </div>
+    </div>
+
+    <div class="bar-nar">
+        <div class="bar-cont-i">
+            <div class="saas one fing">
+                <span class="saas material-symbols-outlined">search</span>
+                <p class="saas">todos</p>
+            </div>
+
+            <div class="two">
+                <span class="material-symbols-outlined">search</span>
+                <p>todos</p>
+            </div>
+
+            <div class="three">
+                <span class="material-symbols-outlined">search</span>
+                <p>todos</p>
+            </div>
+
+            <div class="four">
+                <span class="material-symbols-outlined">search</span>
+                <p>todos</p>
+            </div>
+
+            <div class="five">
+                <span class="material-symbols-outlined">search</span>
+                <p>todos</p>
+            </div>
+
+            <div class="six">
+                <span class="material-symbols-outlined">search</span>
+                <p>todos</p>
+            </div>
+        </div>
+
+        <div class="herra">
+            <a href="">Herramientas</a>
+        </div>
+
+        <div class="secu">
+            <a href="">Se habilitó SafeSearch.</a>
+        </div>
+            
+    </div>
+
+    <div class="sec-none-cont">
+    <div class="dormit">
+        <p class="no-e">No se han encontrado resultados para tu búsqueda (<b>das;ldjhaskljdhaslkjdhasilusahd</b>).</p>
+        <p class="sur">Sugerencias:</p>
+        <ul class="sug-li">
+            <li>Asegúrate de que todas las palabras estén escritas correctamente.</li> 
+            <li>Prueba diferentes palabras clave.</li> 
+            <li>Prueba palabras clave más generales.</li> 
+            <li>Prueba menos palabras clave.</li> 
+        </ul>
+    </div>
+    </div>
+
+    <div  class="noSea">
+        <img src="https://smartbookings.rw/views/assets/images/no_result.gif" alt="" width="650px">
+    </div>
+
+    <footer class="down-up">
+        <div class="ubication">
+            <b class="country"></b>
+            <p class="circle"></p>
+            <b class="state"></b>
+            <p>-</p>
+            <p class="inf1">Según tus lugares (Casa)</p>
+            <p class="inf2">Actualizar ubicación</p>
+        </div>
+
+        <div class="inf">
+            <a class="veinte">Ayuda</a>
+            <p>Enviar comentarios</p>
+            <p>Privacidad</p>
+            <p>Condiciones</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+
+    $.getJSON('https://ipapi.co/json/' , function(data)  {
+
+        let fill = JSON.stringify(data, null, 2)
+
+        console.log(data)
+
+        $('.country').text(`${data.country_name}`)
+
+        $('.state').text(`${data.postal}, ${data.city}`)
+
+    });
+
+    </script>
+
+
+    <script src="indexaa.js"></script>
+</body>
+</html>
